@@ -1,0 +1,156 @@
+/* Style for the header */
+.header {
+    background-color: #365899; /* Blue color similar to Facebook's */
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    padding: 20px;
+    background-color: #4e05f8;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #008CBA;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* Title style */
+.header .title {
+    font-size: 18px;
+}
+
+/* Icons container */
+.header .icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual icon style */
+.header .icons .icon {
+    width: 24px;
+    height: 24px;
+    background-color: white; /* White background for each icon */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #365899;
+    font-weight: bold;
+}
+
+
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    font-family: Arial, sans-serif; 
+}
+#overlay {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: black;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 250px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#overlay h2 { 
+    margin: 0 0 10px 0; 
+    font-size: 16px; 
+    color: #333; 
+}
+#overlay label, #overlay select, #overlay input {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+.slider-label { 
+    margin-top: 10px; 
+}
+input[type="range"] { 
+    width: 100%; 
+}
+#toggleButton { 
+    margin-top: 10px; 
+    padding: 8px; 
+    font-size: 14px; 
+    cursor: pointer; 
+}
+canvas { 
+    display: block; 
+}
+
+
+
+#infoBox {
+    font-size: 1.rem;
+    width: 15%; 
+    position: absolute; 
+    top: 6.rem;
+    right: 0;
+    z-index: 1; 
+    background-color: rgba(55, 127, 185, 0.85);
+    padding: 1.2rem;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+#infoBox img {
+    display: block; /* Để ảnh trở thành phần tử khối */
+    margin: 0 auto; /* Căn giữa ảnh theo chiều ngang */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa của ảnh */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị méo */
+    max-height: 50%; /* Giới hạn chiều cao tối đa của ảnh trong khung */
+}
+
+#infoBox2 {
+    font-size: 1.rem;
+    width: 15%; 
+    position: absolute; 
+    top: 6.rem;
+    right: 0;
+    z-index: 1; 
+    background-color: rgba(55, 127, 185, 0.85);
+    padding: 1.2rem;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none;
+}
+

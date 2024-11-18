@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô phỏng Sóng Âm với Loa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- tạo 3 icon -->
+<div class="header">
+    <div class="title">Sóng âm truyền trong các môi trường khác nhau</div>
+    <div class="icons">
+        <button id="button1" class="icon" >i</button>
+        <button id="button2" class="icon" >?</div>
+        <button id="button3" class="icon"> </button>
+
+        
+    </div>
+</div>
+
+
+
+
+<div id="infoBox" class="hidden">
+    <h3>Sóng âm</h3>
+        <img src="https://classbook3d.com/Simulation3D/SongAm/thumbs/song.png" alt="Sóng âm trong chất rắn" />
+    
+        <ul>
+            <li>Âm thanh </li>
+            <p>là một dạng năng lượng được sinh ra khi một hoặc nhiều vật thể có chuyển động rung hoặc các vật thể đó có chuyển động rất nhanh dao động qua lại một vị trí. Sự rung động và chuyển động đó được gọi là sóng âm, sóng âm truyền dao động ra ngoài môi trường nhờ không khí xung quanh.
+                Âm thanh cần một vật chất cụ thể để truyền âm đi, ví dụ như gỗ, kim loại, gạch, không khí, hoặc nước. Ở trong không khí, tốc độ truyền âm có thể đạt lên tới 330m một giây, nhưng ở trong môi trường nước, âm thanh có thể truyền nhanh hơn thế gấp 4 lần. Khi hét to ở trong hang động ta có nghe thấy tiếng vang vọng lại là do âm thanh chuyển động va vào các vách hang đá rồi truyền ngược lại về tai (âm phản xạ). Âm thanh có thể truyền xa hơn và nhanh hơn rất nhiều ở dưới nước so với không khí, cá voi có thể liên lạc với nhau bằng âm thanh có thể nghe xa tới 160km. Cá heo phát âm thanh dưới nước, âm thanh phản xạ lại có thể giúp cá heo tìm thấy thức ăn. Dơi truyền các tín hiệu âm thanh để giúp chúng không va vào vật cản và bắt sâu bọ trong bóng tối.</p>
+            <hr>
+                <li>Có thể truyền qua vật liệu cứng như kim loại, đá, gỗ...</li>
+                <p>là độ lệch lớn nhất của vật dao động so với vị trí cân bằng của nó. Âm nghe được càng to khi biên độ âm càng lớn. Âm nghe được càng nhỏ khi biên độ âm càng nhỏ.</p>
+            <hr>
+                <li>Tần số</li>    
+                <p>là số dao động của vật thực hiện được trong một giây. Đơn vị tần số là héc (Hz). Âm phát ra càng cao (càng bổng) khi tần số âm càng lớn. Âm phát ra càng thấp (càng trầm) khi tần số càng nhỏ.</p>
+        </ul>
+</div>
+
+
+<div id="infoBox2"  class="hidden">
+    <h3>Hướng Dẫn</h3>
+    
+    <h5>
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_left_click_active.png" width="30px"> 
+        Thay đổi góc nhìn
+    </h5>
+    <p>Click chuột trái và kéo thả chuột để thay đổi góc quan sát.</p>
+    <hr>
+
+    <h5>
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_left_click_active.png" width="30px"> 
+        Thay đổi vị trí mô hình
+    </h5>
+    <p>Click chuột phải và kéo thả chuột để thay đổi vị trí của mô hình.</p>
+    <hr>
+
+    <h5>
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_rotate_active.png" width="30px">
+        Tự động quay (Nếu có)
+    </h5>
+    <p>Click chuột trái vào biểu tượng để bật tắt chức năng quay tự động.</p>
+    <hr>
+
+    <h5> 
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_text_active.png" width="30px">
+        Xem chú thích (Nếu có)
+    </h5>
+    <p>Click chuột trái vào biểu tượng để bật tắt chú thích của mô hình 3D (nếu có). Mỗi một mô hình có thể có một hoặc nhiều chú thích, chú thích này là mô tả ngắn về bộ phận của mô hình tương ứng.</p>
+    <hr>
+
+    <h5>
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_detail_active.png" width="30px">
+        Mô tả ngắn (Nếu có)
+    </h5>
+    <p>Click chuột trái vào biểu tượng xem mô tả ngắn, đây là thông tin mô tả hoăc chú thích của một hoặc nhiều bộ phận trên mô hình</p>
+    <hr>
+
+    <h5>
+        <img src="https://classbook3d.com/Simulation3D/icons/icon_3d_active.png" width="30px">
+        Xem mô hình dưới dạng 3D hoặc 2D (Nếu có)
+    </h5>
+    <p>Click chuột vào biểu tượng để xem mô hình ở dạng 2D hoặc 3D (nếu có).</p>
+
+  
+</div>
+
+
+<div id="overlay">
+    <h2>Sóng âm truyền trong các môi trường khác nhau</h2>
+    <label>Môi trường:
+        <select id="mediumSelect">
+            <option value="liquid">Chất lỏng</option>
+            <option value="air">Chất Khí</option>
+            <option value="solid">Chất rắn</option>
+        </select>
+    </label>
+    <div class="slider-label">Biên độ: <span id="amplitudeDisplay">9.3</span> cm</div>
+    <input type="range" id="amplitudeSlider" min="0.1" max="10" step="0.1" value="9.3">
+    
+    <div class="slider-label">Tần số: <span id="frequencyDisplay">0.43</span> Hz</div>
+    <input type="range" id="frequencySlider" min="0.1" max="1" step="0.01" value="0.43">
+    
+    <div class="slider-label">Bước sóng: <span id="wavelengthDisplay">11.63</span> m</div>
+    <input type="range" id="wavelengthSlider" min="5" max="20" step="0.1" value="11.63">
+    
+    <label><input type="checkbox" id="waveDiagram"> Biểu đồ sóng</label>
+    <button id="toggleButton">Bật</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://threejs.org/examples/fonts/helvetiker_regular.typeface.json"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
