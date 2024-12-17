@@ -47,7 +47,7 @@ body {
 
 /* Title style */
 .header .title {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* Icons container */
@@ -58,8 +58,8 @@ body {
 
 /* Individual icon style */
 .header .icons .icon {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background-color: white; /* White background for each icon */
     border-radius: 50%;
     display: flex;
@@ -138,6 +138,20 @@ canvas {
 }
 
 #infoBox2 {
+    font-size: 1.rem;
+    width: 15%; 
+    position: absolute; 
+    top: 6.rem;
+    right: 0;
+    z-index: 1; 
+    background-color: rgba(55, 127, 185, 0.85);
+    padding: 1.2rem;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+
+#infoBox3 {
     font-size: 1.rem;
     width: 15%; 
     position: absolute; 
